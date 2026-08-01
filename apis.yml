@@ -1,7 +1,14 @@
 aid: twill
 name: Twill
-description: Twill is a company surfaced as a portfolio company of bloomberg-beta and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Twill is a referral-based recruiting platform with the tagline "talent
+  recommended talent." It makes hiring easier and faster by having a network of more
+  than 50,000 vetted, experienced professionals across engineering, product, sales,
+  and growth recommend their peers and friends for open roles, producing warm introductions
+  to passive candidates instead of recruiter cold outreach. Twill advertises an average
+  22-day time to hire, a 90-day retention guarantee on placements, flat-fee pricing,
+  and intelligent matching built in partnership with MIT's Generative AI Lab. The
+  company is backed by Bloomberg Beta and does not currently publish a public developer
+  API or API documentation; api.withtwill.com serves its private platform backend.
 url: https://raw.githubusercontent.com/api-evangelist/twill/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +16,33 @@ x-backed-by:
 - bloomberg-beta
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
+image: https://cdn.prod.website-files.com/680a64b9f6b1ff2215e7d2a2/681874af9e1a61b4befe63c5_Twill%20Logo%20mark%20-%201024_1024_no%20background.jpg
 tags:
 - Company
+- Recruiting
+- Hiring
+- Talent
+- Referrals
+- HR Technology
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +50,25 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/twill-domain-security.yml
 - type: Website
   url: https://www.withtwill.com/
+- type: Login
+  url: https://app.withtwill.com
+- type: SignUp
+  url: https://app.withtwill.com/apply
+- type: Pricing
+  url: https://www.withtwill.com/#pricing
+- type: TermsOfService
+  url: https://cdn.prod.website-files.com/657cbb06b30c55d98cc97f92/662047e24682cc2afb0e4e4d_Twill%20Terms%20of%20Service.pdf
+- type: PrivacyPolicy
+  url: https://cdn.prod.website-files.com/657cbb06b30c55d98cc97f92/6620480e06d70bc882b3e8b8_Twill%20Privacy%20Policy.pdf
+- type: LLMsTxt
+  url: llms/twill-llms.txt
+- type: LinkedIn
+  url: https://www.linkedin.com/company/withtwill/
+- type: Twitter
+  url: https://x.com/withTwill
+- type: Podcast
+  url: https://www.withtwill.com/call-hr

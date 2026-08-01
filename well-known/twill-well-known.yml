@@ -1,0 +1,35 @@
+generated: '2026-07-21'
+method: searched
+source: direct probes of withtwill.com hosts
+note: No /.well-known/ discovery documents were found on any Twill host. All probes
+  recorded below with their HTTP status; docs.withtwill.com and developers.withtwill.com
+  do not resolve (no DNS). api.withtwill.com resolves and serves a private backend
+  (GET /health returns 200) but publishes no discovery documents.
+hosts:
+- host: https://www.withtwill.com
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/oauth-authorization-server, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
+  - {path: /.well-known/ai-plugin.json, status: 404}
+  - {path: /llms.txt, status: 404}
+- host: https://app.withtwill.com
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/oauth-authorization-server, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
+  - {path: /.well-known/ai-plugin.json, status: 404}
+  - {path: /llms.txt, status: 404}
+- host: https://api.withtwill.com
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/oauth-authorization-server, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
+  - {path: /.well-known/ai-plugin.json, status: 404}
+  - {path: /llms.txt, status: 404}
+  - {path: /openapi.json, status: 404}
+  - {path: /docs, status: 404}
+  - {path: /health, status: 200}
